@@ -11,7 +11,14 @@ from deepgram import (
 app = Flask(__name__)
 CORS(app)
 
-AUDIO_FILE = "teste.mp3"
+AUDIO_FILE_0 = "teste.mp3"
+AUDIO_FILE_1 = "teste1.mp3"
+AUDIO_FILE_2 = "teste2.mp3"
+AUDIO_FILE_3 = "teste3.mp3"
+AUDIO_FILE_4 = "teste4.mp3"
+AUDIO_FILE_5 = "teste5.mp3"
+AUDIO_FILE_6 = "teste6.mp3"
+AUDIO_FILE_7 = "teste7.mp3"
 
 @app.route("/transform",methods=['POST'])
 def predict():
@@ -38,7 +45,8 @@ def predict():
 
     except Exception as e:
         print(f"Exception: {e}")
-    
+
+
 
 if __name__=="__main__":
     app.run()
